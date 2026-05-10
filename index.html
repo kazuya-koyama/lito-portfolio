@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プロフィール &amp; 制作実績 | Kazuya Koyama</title>
+  <meta name="description" content="Shopify実装・運用パートナー 小山 和也のポートフォリオ。制作実績・スキルスタックをご覧いただけます。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans JP"', '"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body>
+
+<div class="pf-root font-sans bg-white text-gray-900 tracking-tight" style="selection-color: white;">
+
+  <main class="max-w-4xl mx-auto px-4 pb-24">
+
+    <!-- ページ見出し -->
+    <div class="pt-14 pb-10 border-b border-gray-200">
+      <p class="text-xs font-bold tracking-[0.28em] text-amber-500 mb-3">PORTFOLIO</p>
+      <h1 class="text-4xl md:text-5xl font-black tracking-tight text-gray-900 leading-tight">
+        プロフィール &amp;<br class="md:hidden">制作実績
+      </h1>
+      <p class="mt-4 text-sm text-gray-500 leading-7 max-w-xl">
+        Shopify / Liquid / HTML / CSS / JavaScriptを中心に、ECサイトのテーマ改修・フロントエンド実装・運用しやすい構成づくりに取り組んでいます。
+      </p>
+    </div>
+
+    <!-- ========== PROFILE ========== -->
+    <section id="profile" class="pt-16 pb-14 border-b border-gray-200">
+      <p class="text-xs font-bold tracking-[0.28em] text-amber-500 mb-6">PROFILE</p>
+
+      <div class="grid md:grid-cols-[280px_1fr] gap-10">
+
+        <!-- 左：カード -->
+        <div class="bg-[#101828] text-white p-7 self-start">
+          <img src="./assets/images/profile.png"
+               alt="小山 和也"
+               class="w-full max-w-[220px] object-cover border border-gray-600 mb-6">
+          <p class="text-[11px] font-bold tracking-[0.24em] text-amber-400 mb-1">Kazuya Koyama</p>
+          <h2 class="text-2xl font-bold mb-2">小山 和也</h2>
+          <p class="text-white/60 text-xs uppercase tracking-wider leading-5">
+            Shopify実装パートナー / 既存改修・不具合調査・データ整理
+          </p>
+          <p class="mt-5 text-sm text-white/80 border-t border-white/15 pt-5 leading-6">
+            実装責任者として、全てのコード品質に責任を持ちます。
+          </p>
+        </div>
+
+        <!-- 右：詳細 -->
+        <div>
+          <!-- 経験サマリ -->
+          <div class="grid grid-cols-3 gap-4 mb-8">
+            <div class="border-l-2 border-amber-500 pl-4">
+              <p class="text-[10px] font-bold tracking-[0.2em] text-amber-500 uppercase mb-1">Experience</p>
+              <p class="text-2xl font-bold text-gray-900">3年</p>
+              <p class="text-xs text-gray-500 mt-1 leading-5">制作会社案件に即参画</p>
+            </div>
+            <div class="border-l-2 border-amber-500 pl-4">
+              <p class="text-[10px] font-bold tracking-[0.2em] text-amber-500 uppercase mb-1">Collab</p>
+              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">制作会社<br>案件実績あり</p>
+            </div>
+            <div class="border-l-2 border-amber-500 pl-4">
+              <p class="text-[10px] font-bold tracking-[0.2em] text-amber-500 uppercase mb-1">Focus</p>
+              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">調査・改修<br>引き継ぎ対応</p>
+            </div>
+          </div>
+
+          <!-- 一言 -->
+          <p class="text-base md:text-lg font-medium leading-8 text-gray-800 mb-8">
+            制作会社様の実装フェーズを担うことに特化して活動しています。Shopifyの知識はもちろん、制作フローや報告の仕方も含めて、貴社の進行を止めない動き方を大切にしています。
+          </p>
+
+          <!-- スキルスタック -->
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-gray-500 border-b border-gray-200 pb-2 mb-3">Shopify / Liquid</h3>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>セクション設計・カスタムブロック構築</li>
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>動的メタフィールド連携</li>
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>カートカスタマイズ（Ajax Cart）</li>
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>Matrixifyを使った大規模データ移行</li>
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>アプリ競合の調査・切り分け</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-gray-500 border-b border-gray-200 pb-2 mb-3">フロントエンド</h3>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>JavaScript（DOM操作、Fetch API、動的UI実装）</li>
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>レスポンシブ設計</li>
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>WordPress（テーマカスタマイズ）</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xs font-bold tracking-[0.2em] uppercase text-gray-500 border-b border-gray-200 pb-2 mb-3">ツール・ワークフロー</h3>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>Git（ブランチ運用、PR対応）</li>
+                <li class="flex items-start gap-2 text-sm text-gray-700 leading-6"><span class="flex-shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-amber-400"></span>Figma（デザインカンプからの実装）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WORKS ========== -->
+    <section id="works" class="pt-16">
+      <p class="text-xs font-bold tracking-[0.28em] text-amber-500 mb-2">WORKS</p>
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight text-gray-900 mb-4">制作実績</h2>
+      <p class="text-sm text-gray-500 leading-7 mb-10 max-w-2xl">
+        守秘義務のある制作会社案件が多いため、<br>案件名そのものではなく「どのような条件で、どこまで担当したか」が伝わる形で一部を抜粋しています。
+      </p>
+
+      <div id="works-list" class="space-y-10"></div>
+    </section>
+
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+const works = [
+  {
+    title: 'ECサイト デモストア（hathut）',
+    tags: ['Shopify', 'Liquid', 'JavaScript'],
+    url: 'https://hathut-hat.myshopify.com/',
+    icon: 'store',
+    image: './assets/images/works/works-01.png',
+    note: '公開可能なデモストア',
+    detail: [
+      { label: '相談内容', text: 'Shopify実装の方向性を見せるための公開用デモストア。' },
+      { label: '対応範囲', text: 'Dawnベースのカスタマイズ、商品詳細レイアウト変更、Ajaxカート対応、独自セクション追加。' },
+      { label: '使用技術', text: 'Shopify、Liquid、JavaScript。' },
+      { label: '結果', text: '公開可能な形で、実装イメージを確認いただけるデモとして運用しています。' },
+    ]
+  },
+  {
+    title: '大規模データ移行案件',
+    tags: ['データ移行', 'CSV', '最適化'],
+    icon: 'database',
+    image: './assets/images/works/screenshots/works-02.png',
+    note: 'EC-CUBEから移行 / 商品約90件 + ブログ約600件を対応',
+    detail: [
+      { label: '相談内容', text: 'EC-CUBEからShopifyへのリニューアル移行。ブログはWordPress運用だったため、ストア移行とコンテンツ移行を並行して進める必要がありました。' },
+      { label: '対応範囲', text: 'Dawnベースのオリジナルテーマ新規構築、商品約90件の移行、ブログ約600件の移行、画像パス書き換え対応。' },
+      { label: '進め方', text: '商品・ブログは最初に10件前後で小さく検証し、確認後にまとめて本移行。実装はカンプ共有後に止めずに進行し、全体完成後にまとめてレビューを受ける形で対応しました。' },
+      { label: '工期', text: 'コーディング約3週間、データ移行約1〜2週間。' },
+      { label: '結果', text: 'リニューアルを問題なく完了。丁寧に進める姿勢も評価いただきました。' },
+    ]
+  },
+  {
+    title: 'Dawnベースの短納期オリジナルテーマ構築',
+    tags: ['Shopify', 'Dawn', '短納期'],
+    icon: 'swatch-book',
+    image: './assets/images/works/screenshots/works-03.png',
+    note: '4ページを金曜着手で月曜確認まで実装',
+    detail: [
+      { label: '相談内容', text: '飲食系サイトの新規構築案件。デザインカンプ支給後、短納期でコーディングを進める必要がありました。' },
+      { label: '対応範囲', text: 'トップ、商品一覧、商品詳細、カートの4ページ実装、SP対応、バーガーメニュー構築。' },
+      { label: '進め方', text: '金曜にカンプ共有、コーディング部分は一人で走り切り、月曜確認へ提出。商品登録は依頼側で進行しました。' },
+      { label: '工期', text: '週末を挟んだ短納期で初回提出。' },
+      { label: '結果', text: '初回提出後の大きな手戻りなく、そのまま進行できました。' },
+    ]
+  },
+  {
+    title: 'ポイントアプリ導入に伴うUI・JavaScript拡張',
+    tags: ['ポイントアプリ', 'JavaScript', 'カートドロワー'],
+    icon: 'panels-top-left',
+    image: './assets/images/works/screenshots/works-04.png',
+    note: '標準導入で足りない表示をテーマ側で拡張',
+    detail: [
+      { label: '相談内容', text: '制作会社独自のポイントアプリ導入案件を継続的に担当。通常インストールだけでは足りない表示や導線追加が前提の案件でした。' },
+      { label: '対応範囲', text: 'アプリインストール、初期設定、テーマ組み込み、カートドロワー内へのポイント表示追加、獲得予定ポイントの動的更新など。' },
+      { label: '主な対応箇所', text: 'カートドロワー、マイページ、JavaScriptの動的表示まわり。' },
+      { label: '進め方', text: 'ある程度テンプレート化された導入案件をまとめて受け、既存テーマの構造に合わせて差分実装を行いました。' },
+      { label: '結果', text: '標準導入ではカバーしきれない部分まで含めて、テーマに馴染む形で組み込みました。' },
+    ]
+  },
+  {
+    title: '要件ベースのShopifyアプリ導入・テーマ組み込み',
+    tags: ['Shopify App', '導入支援', 'テーマ組み込み'],
+    icon: 'search',
+    image: './assets/images/works/screenshots/works-05.png',
+    note: 'ポイント・配送・ウィッシュリスト系の導入に対応',
+    detail: [
+      { label: '相談内容', text: '既存テーマを活かしながら、要件に合わせてアプリ機能を追加したいという相談に対応。' },
+      { label: '対応範囲', text: 'アプリの導入、初期設定、テーマへの組み込み、表示位置の調整、必要に応じた他機能との干渉確認。' },
+      { label: '主な対応例', text: '配送アプリ導入、ウィッシュリスト導入、ギフトラッピング向けメタフィールド追加など。' },
+      { label: '使用技術', text: '各種Shopifyアプリ、Liquid、JavaScript。' },
+      { label: '結果', text: 'デフォルト導入では足りない部分を補完し、既存テーマに馴染む状態まで実装しました。' },
+    ]
+  },
+  {
+    title: 'Shopifyマイページ（会員ページ）のUIカスタマイズ',
+    tags: ['Shopify', 'マイページ', 'UI/UX'],
+    icon: 'user-round',
+    image: './assets/images/works/screenshots/works-06.png',
+    note: '会員導線・表示調整を継続対応',
+    detail: [
+      { label: '相談内容', text: 'ポイントアプリ導入や会員向け導線の整理に合わせて、マイページの表示改善を継続的に対応。' },
+      { label: '対応範囲', text: '注文履歴・登録情報への導線整理、日本語テキスト調整、メタフィールド情報の表示、関連UIの見直し。' },
+      { label: '主な対応箇所', text: 'マイページ、JavaScriptの動的表示、既存テーマ内の会員向けパーツ。' },
+      { label: '使用技術', text: 'Liquid、HTML/CSS、JavaScript。' },
+      { label: '結果', text: '既存テーマに違和感なく馴染む形で、会員向け導線を整理しました。' },
+    ]
+  },
+  {
+    title: 'WordPressフォームのメール不達調査・切り分け',
+    tags: ['WordPress', '不具合調査', 'DNS切り分け'],
+    icon: 'mail',
+    note: '届くドメイン・届かないドメインを切り分け',
+    detail: [
+      { label: '相談内容', text: 'サイト公開から時間が経っているにもかかわらず、問い合わせ連絡がまったく来ていないという相談。' },
+      { label: '対応範囲', text: 'フォームまわりの確認、複数ドメイン宛ての送信テスト、メール到達状況の切り分け。' },
+      { label: '進め方', text: '届く宛先と届かない宛先を整理しながら原因を追跡し、フロント側だけでなく配信経路まで含めて確認しました。' },
+      { label: '結果', text: 'DNS設定起因の可能性が高いところまで切り分け、制作会社側で次に確認すべきポイントを返却しました。' },
+    ]
+  },
+  {
+    title: 'リライト済み原稿のブログ記事一括差し替え',
+    tags: ['ブログ運用', 'コンテンツ差し替え', 'SEO配慮'],
+    icon: 'newspaper',
+    note: 'URL・構造を維持したコンテンツ更新',
+    detail: [
+      { label: '相談内容', text: 'SEO評価を大きく崩さず、既存ブログ記事をリライト済み原稿へ差し替えたいという運用案件。' },
+      { label: '対応範囲', text: '既存記事とリライト原稿の照合、本文・メタ情報の更新、マークアップ調整。' },
+      { label: '進め方', text: 'URLや既存構造を崩さない前提で差し替え箇所を確認しながら、順次更新を進めました。' },
+      { label: '工期', text: '約2週間。' },
+      { label: '結果', text: '既存構造を維持したまま、コンテンツ更新を完了しました。' },
+    ]
+  },
+  {
+    title: 'GAS＋Googleカレンダー連携予約フォーム',
+    tags: ['GAS', 'Googleカレンダー', '予約管理'],
+    icon: 'calendar-days',
+    note: 'ランニングコストゼロ / 約2週間で構築',
+    detail: [
+      { label: '相談内容', text: '外部サービスの月額費用を抑えつつ、予約フォームとGoogleカレンダー連携を実現したいという相談。' },
+      { label: '対応範囲', text: '予約フォーム実装、カレンダー連携ロジック、自動返信メール、iframe埋め込み。' },
+      { label: '使用技術', text: 'Google Apps Script (GAS)、HTML/CSS。' },
+      { label: '工期', text: '約2週間。' },
+      { label: '結果', text: 'ランニングコストを増やさずに予約機能を導入しました。' },
+    ]
+  },
+];
+
+function renderWorks() {
+  const container = document.getElementById('works-list');
+  works.forEach((work, i) => {
+    const num = String(i + 1).padStart(2, '0');
+    const isExternal = !!work.url;
+
+    const imageHtml = work.image
+      ? `<div class="bg-gray-100 overflow-hidden h-[220px]">
+           <img src="${work.image}" alt="${work.title}" class="w-full h-full object-cover object-top">
+         </div>`
+      : '';
+
+    const linkIcon = isExternal
+      ? `<a href="${work.url}" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-gray-400 hover:text-gray-700 transition-colors">
+           <i data-lucide="external-link" class="w-4 h-4"></i>
+         </a>`
+      : `<span class="flex-shrink-0 flex items-center gap-1 text-xs text-gray-400">
+           <i data-lucide="lock" class="w-3 h-3"></i>非公開
+         </span>`;
+
+    const tagsHtml = work.tags.map(tag =>
+      `<span class="px-2 py-0.5 text-[11px] font-semibold tracking-wider text-gray-600 bg-gray-100 rounded-full border border-gray-200">${tag}</span>`
+    ).join('');
+
+    const noteHtml = work.note
+      ? `<p class="inline-block text-xs font-semibold text-gray-500 bg-gray-50 border border-gray-200 rounded px-3 py-1 mb-4">${work.note}</p>`
+      : '';
+
+    const detailHtml = work.detail && work.detail.length
+      ? `<div class="border-t border-gray-100 pt-5 space-y-4">
+           ${work.detail.map(d => `
+             <div>
+               <p class="text-[10px] font-bold tracking-widest text-amber-500 uppercase mb-0.5">${d.label}</p>
+               <p class="text-sm text-gray-700 leading-6">${d.text}</p>
+             </div>`).join('')}
+         </div>`
+      : '';
+
+    container.innerHTML += `
+      <article class="border border-gray-200 rounded-lg overflow-hidden">
+        ${imageHtml}
+        <div class="p-6 md:p-8">
+          <div class="flex items-start gap-4 mb-5">
+            <div class="flex-shrink-0 w-10 h-10 bg-amber-50 border border-amber-100 rounded-lg flex items-center justify-center">
+              <i data-lucide="${work.icon}" class="w-5 h-5 text-amber-500"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-3 mb-1">
+                <span class="text-2xl font-black tracking-tight text-amber-400/70 leading-none">${num}</span>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug">${work.title}</h3>
+                ${linkIcon}
+              </div>
+              <div class="flex flex-wrap gap-1.5 mt-2">${tagsHtml}</div>
+            </div>
+          </div>
+          ${noteHtml}
+          ${detailHtml}
+        </div>
+      </article>`;
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  renderWorks();
+  lucide.createIcons();
+});
+</script>
+</body>
+</html>
