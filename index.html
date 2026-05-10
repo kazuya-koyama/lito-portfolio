@@ -305,7 +305,11 @@ function renderWorks() {
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-3 mb-1">
                 <span class="text-2xl font-black tracking-tight text-amber-400/70 leading-none">${num}</span>
-                <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug">${work.title}</h3>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+                  ${isExternal
+                    ? `<a href="${work.url}" target="_blank" rel="noopener noreferrer" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-700 transition-colors">${work.title}</a>`
+                    : work.title}
+                </h3>
                 ${linkIcon}
               </div>
               <div class="flex flex-wrap gap-1.5 mt-2">${tagsHtml}</div>
