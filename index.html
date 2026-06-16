@@ -61,7 +61,7 @@
         <!-- 右：詳細 -->
         <div>
           <!-- 経験サマリ -->
-          <div class="grid grid-cols-3 gap-4 mb-8">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-4 mb-8">
             <div class="border-l-2 border-amber-500 pl-4">
               <p class="text-[10px] font-bold tracking-[0.2em] text-amber-500 mb-1">Experience</p>
               <p class="text-sm font-bold text-gray-900 mt-1 leading-5">約4年 /<br>Web・EC実装</p>
@@ -153,7 +153,7 @@ const works = [
     title: '大規模データ移行・オリジナルテーマ新規構築',
     tags: ['Shopify', '新規構築', 'データ移行'],
     icon: 'database',
-    image: './assets/images/works/screenshots/works-02.png',
+    image: './assets/images/works/screenshots/works-01.png',
     note: 'EC-CUBEから移行 / 商品約90件 + ブログ約600件を対応',
     detail: [
       { label: '相談内容', text: 'EC-CUBEからShopifyへのリニューアル移行。ブログはWordPress運用だったため、ストア移行とコンテンツ移行を並行して進める必要がありました。' },
@@ -168,7 +168,7 @@ const works = [
     tags: ['Shopify', 'Liquid', 'JavaScript'],
     url: 'https://hathut-hat.myshopify.com/',
     icon: 'store',
-    image: './assets/images/works/works-01.png',
+    image: './assets/images/works/screenshots/works-02.png',
     note: '公開可能なデモストア',
     detail: [
       { label: '相談内容', text: 'Shopify実装の方向性を見せるための公開用デモストア。' },
@@ -181,7 +181,7 @@ const works = [
     title: 'Shopifyでの大規模ECコーディング',
     tags: ['Shopify', 'Liquid', '大規模EC'],
     icon: 'layout-template',
-    image: './assets/images/works/screenshots/works-05.png',
+    image: './assets/images/works/screenshots/works-03.png',
     note: '商品詳細を除くほぼ全ページのコーディングを担当（非公開）',
     detail: [
       { label: '相談内容', text: 'インテリア系の大規模ECサイトのShopify構築案件で、コーディングを担当しました。' },
@@ -194,7 +194,7 @@ const works = [
     title: 'Shopify ECサイトの全体コーディング',
     tags: ['Shopify', '新規構築', '全体コーディング'],
     icon: 'layout-dashboard',
-    image: './assets/images/works/screenshots/works-06.png',
+    image: './assets/images/works/screenshots/works-04.png',
     note: 'サイト全体のコーディングを担当（非公開）',
     detail: [
       { label: '相談内容', text: 'ギフト・供養系ブランドのShopify ECサイトを、デザインカンプをもとに全体コーディングする案件。' },
@@ -207,7 +207,7 @@ const works = [
     title: '短納期オリジナルテーマ構築',
     tags: ['Shopify', 'Dawn', '新規構築', '短納期'],
     icon: 'swatch-book',
-    image: './assets/images/works/screenshots/works-03.png',
+    image: './assets/images/works/screenshots/works-05.png',
     note: '4ページを金曜着手で月曜確認まで実装',
     detail: [
       { label: '相談内容', text: '飲食系サイトの新規構築案件。デザインカンプ支給後、短納期でコーディングを進める必要がありました。' },
@@ -215,6 +215,19 @@ const works = [
       { label: '進め方', text: '金曜のカンプ共有後、優先度を確認しながらコーディングを一括で担当し、月曜の確認に間に合う形で提出。商品登録は依頼側と分担しました。' },
       { label: '工期', text: '週末を挟んだ短納期で初回提出。' },
       { label: '結果', text: '初回提出後の大きな手戻りなく、そのまま進行できました。' },
+    ]
+  },
+  {
+    title: 'WordPressサイトのテーマ実装・更新しやすいCMS設計',
+    tags: ['WordPress', 'PHP', 'CMS設計'],
+    icon: 'square-pen',
+    image: './assets/images/works/screenshots/works-06.png',
+    note: 'テーマ・テンプレート実装＋運用担当者が更新しやすい入力設計（非公開）',
+    detail: [
+      { label: '相談内容', text: 'WordPressサイトのテーマ実装と既存サイトの改修。複数の案件で、非エンジニアの運用担当者が管理画面から無理なく更新できる状態にしたいという要件がありました。' },
+      { label: '対応範囲', text: 'デザインをもとにしたテーマ・テンプレート実装、下層ページ追加、既存サイトの改修。ACF・functions.phpを用いて、画像・テキスト・一覧情報を管理画面から更新できる入力項目を設計しました。' },
+      { label: '使用技術', text: 'WordPress、PHP（functions.php）、ACF、HTML/CSS、JavaScript。' },
+      { label: '結果', text: '運用担当者が自力で更新できる構成にし、公開後の更新負荷を下げました。' },
     ]
   },
   {
@@ -234,7 +247,7 @@ const works = [
     title: 'Shopifyアプリ導入・テーマ組み込み＆UI拡張',
     tags: ['Shopify App', 'Liquid', 'JavaScript'],
     icon: 'panels-top-left',
-    image: './assets/images/works/screenshots/works-04.png',
+    image: './assets/images/works/screenshots/works-08.png',
     note: 'ポイント・配送・ウィッシュリスト系の導入とテーマ拡張に対応',
     detail: [
       { label: '相談内容', text: '既存テーマを活かしながら、要件に合わせてアプリ機能を追加・拡張したいという相談を継続的に担当しました。' },
@@ -242,18 +255,6 @@ const works = [
       { label: '主な対応例', text: 'ポイントアプリ（カートドロワー／獲得予定ポイントの動的更新）、配送アプリ、ウィッシュリスト、ギフトラッピング向けメタフィールド追加など。' },
       { label: '使用技術', text: '各種Shopifyアプリ、Liquid、JavaScript。' },
       { label: '結果', text: '標準導入では足りない表示・導線まで、既存テーマに馴染む形で実装しました。' },
-    ]
-  },
-  {
-    title: 'WordPressサイトのテーマ実装・更新しやすいCMS設計',
-    tags: ['WordPress', 'PHP', 'CMS設計'],
-    icon: 'square-pen',
-    note: 'テーマ・テンプレート実装＋運用担当者が更新しやすい入力設計（非公開）',
-    detail: [
-      { label: '相談内容', text: 'WordPressサイトのテーマ実装と既存サイトの改修。複数の案件で、非エンジニアの運用担当者が管理画面から無理なく更新できる状態にしたいという要件がありました。' },
-      { label: '対応範囲', text: 'デザインをもとにしたテーマ・テンプレート実装、下層ページ追加、既存サイトの改修。ACF・functions.phpを用いて、画像・テキスト・一覧情報を管理画面から更新できる入力項目を設計しました。' },
-      { label: '使用技術', text: 'WordPress、PHP（functions.php）、ACF、HTML/CSS、JavaScript。' },
-      { label: '結果', text: '運用担当者が自力で更新できる構成にし、公開後の更新負荷を下げました。' },
     ]
   },
 ];
@@ -309,22 +310,25 @@ function renderWorks() {
     container.innerHTML += `
       <article class="border border-gray-200 rounded-lg overflow-hidden">
         ${imageHtml}
-        <div class="p-6 md:p-8">
-          <div class="flex items-start gap-4 mb-5">
-            <div class="flex-shrink-0 w-10 h-10 bg-amber-50 border border-amber-100 rounded-lg flex items-center justify-center">
-              <i data-lucide="${work.icon}" class="w-5 h-5 text-amber-500"></i>
+        <div class="p-5 sm:p-6 md:p-8">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-5">
+            <div class="flex items-center justify-between sm:block">
+              <div class="flex-shrink-0 w-10 h-10 bg-amber-50 border border-amber-100 rounded-lg flex items-center justify-center">
+                <i data-lucide="${work.icon}" class="w-5 h-5 text-amber-500"></i>
+              </div>
+              <div class="sm:hidden">${linkIcon}</div>
             </div>
             <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-3 mb-1">
-                <span class="text-2xl font-black tracking-tight text-amber-400/70 leading-none">${num}</span>
-                <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+              <div class="flex items-start gap-3 mb-2">
+                <span class="flex-shrink-0 text-2xl font-black tracking-tight text-amber-400/70 leading-none pt-0.5">${num}</span>
+                <h3 class="flex-1 min-w-0 text-[1.35rem] sm:text-xl md:text-2xl font-bold text-gray-900 leading-snug break-words">
                   ${isExternal
                     ? `<a href="${work.url}" target="_blank" rel="noopener noreferrer" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-700 transition-colors">${work.title}</a>`
                     : work.title}
                 </h3>
-                ${linkIcon}
+                <div class="hidden sm:block flex-shrink-0">${linkIcon}</div>
               </div>
-              <div class="flex flex-wrap gap-1.5 mt-2">${tagsHtml}</div>
+              <div class="flex flex-wrap gap-2 mt-3">${tagsHtml}</div>
             </div>
           </div>
           ${noteHtml}
