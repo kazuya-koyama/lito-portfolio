@@ -48,7 +48,7 @@
         <div class="bg-[#101828] text-white p-7 self-start">
           <img src="./assets/images/profile.png"
                alt="小山 和也"
-               class="w-full max-w-[220px] object-cover border border-gray-600 mb-6">
+               class="w-full md:max-w-[220px] object-cover border border-gray-600 mb-6">
           <p class="text-[11px] font-bold tracking-[0.24em] text-amber-400 mb-1">Kazuya Koyama</p>
           <h2 class="text-2xl font-bold mb-2">小山 和也</h2>
           <p class="text-white/60 text-xs tracking-wider leading-5">
@@ -64,16 +64,16 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-4 mb-8">
             <div class="border-l-2 border-amber-500 pl-4">
               <p class="text-[10px] font-bold tracking-[0.2em] text-amber-500 mb-1">Experience</p>
-              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">約4年 /<br>Web・EC実装</p>
+              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">約4年 /<br class="hidden sm:block">Web・EC実装</p>
               <p class="text-xs text-gray-500 mt-1 leading-5">制作会社案件での実装・修正・検証対応</p>
             </div>
             <div class="border-l-2 border-amber-500 pl-4">
               <p class="text-[10px] font-bold tracking-[0.2em] text-amber-500 mb-1">Collab</p>
-              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">制作会社案件 /<br>新規構築〜改修・検証</p>
+              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">制作会社案件 /<br class="hidden sm:block">新規構築〜改修・検証</p>
             </div>
             <div class="border-l-2 border-amber-500 pl-4">
               <p class="text-[10px] font-bold tracking-[0.2em] text-amber-500 mb-1">Focus</p>
-              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">Shopify / Liquid /<br>新規構築・既存改修</p>
+              <p class="text-sm font-bold text-gray-900 mt-1 leading-5">Shopify / Liquid /<br class="hidden sm:block">新規構築・既存改修</p>
             </div>
           </div>
 
@@ -314,13 +314,14 @@ function renderWorks() {
           <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-5">
             <div class="flex items-center justify-between sm:block">
               <div class="flex-shrink-0 w-10 h-10 bg-amber-50 border border-amber-100 rounded-lg flex items-center justify-center">
-                <i data-lucide="${work.icon}" class="w-5 h-5 text-amber-500"></i>
+                <i data-lucide="${work.icon}" class="hidden sm:block w-5 h-5 text-amber-500"></i>
+                <span class="sm:hidden text-2xl font-black tracking-tight text-amber-400/80 leading-none">${num}</span>
               </div>
               <div class="sm:hidden">${linkIcon}</div>
             </div>
             <div class="flex-1 min-w-0">
               <div class="flex items-start gap-3 mb-2">
-                <span class="flex-shrink-0 text-2xl font-black tracking-tight text-amber-400/70 leading-none pt-0.5">${num}</span>
+                <span class="hidden sm:inline flex-shrink-0 text-2xl font-black tracking-tight text-amber-400/70 leading-none pt-0.5">${num}</span>
                 <h3 class="flex-1 min-w-0 text-[1.35rem] sm:text-xl md:text-2xl font-bold text-gray-900 leading-snug break-words">
                   ${isExternal
                     ? `<a href="${work.url}" target="_blank" rel="noopener noreferrer" class="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-700 transition-colors">${work.title}</a>`
